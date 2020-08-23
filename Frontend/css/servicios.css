@@ -1,0 +1,210 @@
+/*
+    Estilos para la página de servicios desde el punto de vista de un usuario tipo cliente.
+*/
+.logo-image img {
+    width: 7.4375rem;
+    height: 2rem;
+    
+}
+.bg-light{
+    background-color: #222831 !important;
+}
+.navbar{
+    padding: 1.3rem 1.3rem !important;
+}
+.usuario{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.usuario:hover{
+    text-decoration: none;
+    color: #32e0c4;
+}
+a{
+    text-decoration: none;
+}
+/* Estilos barra de menú de las categorías*/
+.contenedor-barra{
+    width: 100%;
+    background-color: #393e46;
+}
+.categoria{
+    width: 10%;
+    float: left;
+    padding:1% 1%;
+    background-color: #32e0c4;
+    font-size: 1rem;
+    border-right: 1px solid #222831;
+    text-align: center;
+}
+#cat-1:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-2:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-3:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-4:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-5:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-6:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-7:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-8:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-9:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+#cat-10:hover{
+    background-color: #32e0c39a;
+    cursor: pointer;
+}
+@media (max-width: 930px) {
+    .categoria{
+        width: 20%;
+        border-bottom: 1px solid #222831;
+        border-left: 1px solid #222831;
+    }
+}
+@media (max-width: 530px) {
+    .categoria{
+        width: 50%;
+        border-bottom: 1px solid #222831;
+        border-left: 1px solid #222831;
+    }
+}
+@media (max-width: 400px) {
+    .categoria{
+        width: 100%;
+        border-bottom: 1px solid #222831;
+        border-left: 1px solid #222831;
+    }
+}
+/* Estilos área de visualización de los servicios*/
+.cont-servicios{
+    margin-top: 25%;
+}
+.servicios{
+    width: 100%;
+    padding: 5% 6% 5% 6%;
+    background-color: #32e0c4;
+}
+.img-perfil{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+}
+.cont-img{
+    float: left;
+}
+.informacion{
+    float: left;
+    margin-left: 3%;
+}
+.nombre{
+    font-size: 1.5rem;
+}
+.trabajo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #393e46;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.descripcion{
+    font-size: 1rem;
+}
+.btn-mas-inf{
+    background-color: transparent;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: solid 1px #32e0c4;
+    color: #32e0c4;
+    font-size: 1rem;
+}
+.btn-mas-inf:hover{
+    background-color: #32e0c4;
+    color: #393e46;
+}
+/* Estilos de la ventana modal con la información detallada de los usuarios*/
+.cont-img-informacion{
+    text-align: center;
+}
+.img-informacion{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+.nombre-informacion{
+    font-size: 2rem;
+    color: #222831;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Dancing Script', cursive;
+}
+.informacion-completa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+.dato{
+    padding-left: 5px;
+}
+.cont-descripcion-completa{
+    margin-top: 3%;
+    text-align: center;
+}
+.descripcion{
+    margin-top: 3%;
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.btn-modal{
+    padding: 4px 10px 4px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.btn-cerrar{
+    border: solid 1px #393e46;
+    background-color: #393e46;
+    color: white;
+}
+.btn-contactar{
+    border: solid 1px #32e0c4;
+    background-color: #32e0c4;
+    color: white;
+}
+.btn-cerrar:hover{
+    background-color: #222831;
+    color: white;
+}
+.btn-contactar:hover{
+    background-color: #24bea5;
+    color: white;
+}
+#masInformacion{
+    background: linear-gradient(to right, #393e46a8, #32e0c3a8) !important;  
+}
