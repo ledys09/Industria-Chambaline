@@ -2,7 +2,9 @@ var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var database = require('./modules/database');
+require("dotenv").config({ path: "./Backend/config.env" });
 const path = require('path');
+
 
 var app = express();
 
@@ -23,14 +25,15 @@ app.use("/api/login", login);
 //client
 app.use(express.static("../Frontend"));
 
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "Frontend", "index.html"))
-    });
+     app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "../Frontend", "index.html"))
+    }); 
 
 
 // Definición de middlewares.
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
+console.log(process.env.PORT);
 
 // Fin de las definiciones de middlewares.
 
