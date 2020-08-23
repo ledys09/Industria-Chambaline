@@ -1,12 +1,13 @@
 // Database: Conexión con la base de datos de Chambaline.
-var mongoose = require('mongoose');
+// mongoose = require('mongoose');
+const mongoClient = require("mongodb").MongoClient;
+/* require("dotenv").config({ path: "../config.env" }); */
 
-var servidor = process.env.DBCL;
-//var db = 'chambaline';
-
+/* var servidor = 'localhost:27017';
+var db = 'chambaline'; */
 class Database{
     constructor(){
-        mongoose.connect(`mongodb://${servidor}`)
+        mongoClient.connect(`mongodb+srv://chambaline:chambaline@chambalinedb.zpwuj.mongodb.net/chambaline?retryWrites=true&w=majority`, { useNewUrlParser: true })
         .then(()=>{
             console.log('Conectado a la base de datos de Chambaline');
         }).catch(error=>{
