@@ -2,7 +2,7 @@ var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var database = require('./modules/database');
-require("dotenv").config({ path: "./Backend/config.env" });
+require("dotenv").config({ path: "./Backend/archivos-config/config.env" });
 const path = require('path');
 
 
@@ -23,17 +23,17 @@ app.use("/api/login", login);
 // Fin de la inclusión de routers.
 
 //client
-app.use(express.static("../Frontend"));
+app.use(express.static("./Frontend"));
 
      app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../Frontend", "index.html"))
+        res.sendFile(path.resolve(__dirname, "Frontend", "index.html"))
     }); 
 
 
 // Definición de middlewares.
 
 const PORT = process.env.PORT || 3000;
-console.log(process.env.PORT);
+//console.log(process.env.USER);
 
 // Fin de las definiciones de middlewares.
 
