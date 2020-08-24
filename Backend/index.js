@@ -26,7 +26,7 @@ app.use("/api/login", login);
 app.use(express.static("./Frontend"));
 
      app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "Frontend", "index.html"))
+        res.sendFile(path.resolve(__dirname, "../Frontend", "index.html"))
     }); 
 
 
