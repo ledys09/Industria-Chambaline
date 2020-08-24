@@ -71,7 +71,7 @@ function inicio(){
         validarCampoVacio("login-password")) {
         let parametros = "correo="+ $("#login-usuario").val() + "&" + "contrasena="+ $("#login-password").val()
                 $.ajax({
-                    url: 'http://app-chambaline.herokuapp.com/api/login',
+                    url: 'https://app-chambaline.herokuapp.com/api/login',
                     data: parametros,
                     method: 'POST',
                     dataType:'JSON',
