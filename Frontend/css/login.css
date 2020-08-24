@@ -1,5 +1,5 @@
 body{
-    background-color: white !important;
+
     margin: 0;
     padding: 0;
 }
@@ -9,9 +9,9 @@ height: 100vh;
 position: fixed;
 }
 #img-man{
-margin-left: 550px;
-margin-top:190px;
-width: 250px;
+left: 150vh;
+height: 80vh;
+top:10vw;
 position: fixed;
 }
 @media screen and (max-width: 1000px) {
