@@ -18,7 +18,7 @@ function logout(){
 
 function buscarCategoria(i){
     $.ajax({
-        url:`http://localhost:8888/api/datadb/services/${i}`,
+        url:`http://app-chambaline.herokuapp.com/api/datadb/services/${i}`,
         method: 'GET',
         dataType: 'JSON',
         success: function(res){
@@ -71,7 +71,7 @@ function mostrarUsuario(e){
     let idUsuario = e.target.dataset.id;
     let modal = document.getElementById('modal-body');
     $.ajax({
-        url:`http://localhost:8888/api/datadb/userservice/${idUsuario}`,
+        url:`http://app-chambaline.herokuapp.com/api/datadb/userservice/${idUsuario}`,
         method: 'GET',
         dataType: 'JSON',
         success: function(res){

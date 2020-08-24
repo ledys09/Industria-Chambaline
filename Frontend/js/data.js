@@ -336,7 +336,7 @@ let usuarios = [{
             };
             let parametros = `nombre=${usuario.nombre}&apellido=${usuario.apellido}&usuario=${usuario.nombreUsuario}&contrasena=${usuario.contrasena}&correo=${usuario.correo}&telefono=${usuario.telefono}`;
             $.ajax({
-                url:'http://localhost:8888/api/register',
+                url:'https://app-chambaline.herokuapp.com/api/register',
                 data: parametros,
                 method: 'POST',
                 datatype:'JSON',
