@@ -32,7 +32,7 @@ app.use(express.static("./Frontend"));
 
 // Definición de middlewares.
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8888;
 //console.log(process.env.USER);
 
 // Fin de las definiciones de middlewares.
