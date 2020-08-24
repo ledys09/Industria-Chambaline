@@ -1,7 +1,7 @@
 // Database: Conexión con la base de datos de Chambaline.
 // mongoose = require('mongoose');
 const mongoClient = require("mongodb").MongoClient;
-require("dotenv").config({ path: "./Backend/archivos-config/config.env" });
+require("dotenv").config({ path: "./config.env" });
 
 const cl= process.env.USER;
 

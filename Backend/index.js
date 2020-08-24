@@ -2,7 +2,7 @@ var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var database = require('./modules/database');
-require("dotenv").config({ path: "./Backend/archivos-config/config.env" });
+require("dotenv").config({ path: "./config.env" });
 const path = require('path');
 
 
